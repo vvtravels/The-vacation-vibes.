@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050b18">
+  <title>Vacation Vibes Tours and Travels</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Vacation Vibes</div>
+
+  <button class="hamburger" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#vehicles">Vehicles</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="nav-backdrop" id="navBackdrop"></div>
+</header>
+
+<section class="hero" id="home">
+    <img src="image/vv-logo.svg" class="hero-logo" alt="VV Travels Logo">
+  <div class="hero-content">
+    <h1>VACATION VIBES TOURS AND TRAVELS</h1>
+
+    <p>Premium taxi and travel service in Coonoor, Ooty, and the Nilgiris.</p>
+<p class="hero-note">Instant confirmation via WhatsApp • Trusted local drivers • Nilgiris specialist</p>
+    <a class="btn"
+       href="https://wa.me/919585945565?text=Hello%20Vacation%20Vibes%20Tours%20and%20Travels,%20I%20would%20like%20to%20book%20a%20trip."
+       target="_blank">
+       Book on WhatsApp
+    </a>
+  </div>
+</section>
+<section class="booking" id="booking">
+  <div class="booking-card">
+    <h2>Book Your Trip</h2>
+    <p>Fill in your trip details and continue on WhatsApp.</p>
+
+    <div class="booking-grid">
+      <input type="text" id="pickup" placeholder="Pickup location">
+
+      <input type="text" id="drop" placeholder="Drop location">
+
+      <input type="date" id="travelDate">
+
+      <select id="vehicle">
+        <option value="" disabled selected>Choose Vehicle</option>
+        <option value="Toyota Innova">Toyota Innova</option>
+        <option value="Toyota Innova">Toyota Innova</option>
+        <option value="Toyota Etios">Toyota Etios</option>
+        <option value="Maruti Swift">Maruti Swift</option>
+        <option value="Tempo Traveller">Tempo Traveller</option>
+      </select>
+
+      <input type="number" id="passengers" placeholder="Number of passengers">
+
+      <input type="text" id="customerName" placeholder="Your name">
+
+      <input type="tel" id="customerPhone" placeholder="Your phone number">
+    </div>
+
+    <button class="btn" onclick="bookTrip()">
+      Book via WhatsApp
+    </button>
+  </div>
+</section>
+<section class="vehicles" id="vehicles">
+  <div class="section-title">
+    <h2>Our Premium Fleet</h2>
+    <p>Comfortable, well-maintained vehicles for every journey across Coonoor, Ooty, and the Nilgiris.</p>
+  </div>
+
+  <div class="vehicle-grid">
+
+    <div class="vehicle-card">
+      <img src="image/innova-new.jpg" alt="Toyota Innova">
+      <div class="vehicle-info">
+        <h3>Toyota Innova</h3>
+        <p>Luxury family travel • Airport transfers • Outstation trips</p>
+        <a class="vehicle-btn" href="https://wa.me/919585945565?text=Hello,%20I%20would%20like%20to%20book%20the%20Toyota%20Innova." target="_blank">Book This Vehicle</a>
+      </div>
+    </div>
+
+    <div class="vehicle-card">
+      <img src="image/innova-old.jpg" alt="Toyota Innova">
+      <div class="vehicle-info">
+        <h3>Toyota Innova</h3>
+        <p>Reliable travel • Family trips • Comfortable seating</p>
+        <a class="vehicle-btn" href="https://wa.me/919585945565?text=Hello,%20I%20would%20like%20to%20book%20the%20Toyota%20Innova." target="_blank">Book This Vehicle</a>
+      </div>
+    </div>
+
+    <div class="vehicle-card">
+      <img src="image/etios.jpg" alt="Toyota Etios">
+      <div class="vehicle-info">
+        <h3>Toyota Etios</h3>
+        <p>Affordable travel • Local sightseeing • Airport pickup</p>
+        <a class="vehicle-btn" href="https://wa.me/919585945565?text=Hello,%20I%20would%20like%20to%20book%20the%20Toyota%20Etios." target="_blank">Book This Vehicle</a>
+      </div>
+    </div>
+
+    <div class="vehicle-card">
+      <img src="image/swift.jpg" alt="Maruti Swift">
+      <div class="vehicle-info">
+        <h3>Maruti Swift</h3>
+        <p>Budget-friendly • Local travel • Quick city rides</p>
+        <a class="vehicle-btn" href="https://wa.me/919585945565?text=Hello,%20I%20would%20like%20to%20book%20the%20Maruti%20Swift." target="_blank">Book This Vehicle</a>
+      </div>
+    </div>
+
+    <div class="vehicle-card">
+      <img src="image/traveller.jpg" alt="Tempo Traveller">
+      <div class="vehicle-info">
+        <h3>Tempo Traveller</h3>
+        <p>Group tours • Wedding travel • Corporate trips</p>
+        <a class="vehicle-btn" href="https://wa.me/919585945565?text=Hello,%20I%20would%20like%20to%20book%20the%20Tempo%20Traveller." target="_blank">Book This Vehicle</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="why-us">
+  <div class="section-title">
+    <h2>Why Choose Vacation Vibes?</h2>
+    <p>We provide reliable, comfortable, and safe travel across the Nilgiris.</p>
+  </div>
+
+  <div class="why-grid">
+
+    <div class="why-card">
+      <h3>Experienced Drivers</h3>
+      <p>Professional local drivers with excellent knowledge of Coonoor, Ooty, and surrounding hill routes.</p>
+    </div>
+
+    <div class="why-card">
+      <h3>Clean Vehicles</h3>
+      <p>Well-maintained, sanitized, and comfortable vehicles for every journey.</p>
+    </div>
+
+    <div class="why-card">
+      <h3>24/7 Booking</h3>
+      <p>Quick WhatsApp booking and reliable customer support for all travel needs.</p>
+    </div>
+
+    <div class="why-card">
+      <h3>Affordable Pricing</h3>
+      <p>Transparent pricing with no hidden charges and excellent value for money.</p>
+    </div>
+
+  </div>
+</section>
+<section class="reviews" id="reviews">
+  <div class="section-title">
+    <h2>What Our Customers Say</h2>
+    <p>Trusted by travelers across Coonoor and the Nilgiris.</p>
+  </div>
+
+  <div class="rating-box">
+    <h3>Google Rating</h3>
+    <div class="stars">★★★★★</div>
+    <p>Based on genuine customer reviews</p>
+  </div>
+
+  <div class="review-grid qr-grid">
+
+    <div class="review-card qr-card">
+      <h3>Scan to See Our Reviews</h3>
+      <div class="qr-code">
+        <span class="qr-fallback">QR Code</span>
+        <img id="review-qr" src="image/review-qr.png" alt="Google Reviews QR code" onload="this.previousElementSibling.style.display='none'" onerror="this.style.display='none'">
+      </div>
+      <p>Scan to view and add reviews on our Google Business Profile.</p>
+    </div>
+
+  </div>
+</section>
+<section class="contact" id="contact">
+  <div class="section-title">
+    <h2>Contact Us</h2>
+    <p>We’re available for bookings, airport transfers, sightseeing tours, and outstation travel across the Nilgiris.</p>
+  </div>
+
+  <div class="contact-container">
+
+    <div class="contact-card">
+      <h3>Vacation Vibes Tours and Travels</h3>
+<p><strong>Business Hours:</strong> 24/7 Available</p>
+      <p><strong>Phone:</strong> +91 9489776369</p>
+      <p><strong>WhatsApp:</strong> +91 95859 45565</p>
+      <p><strong>Location:</strong> Coonoor, Nilgiris, Tamil Nadu</p>
+
+      <div class="contact-buttons">
+        <a class="btn"
+           href="https://wa.me/919585945565?text=Hello%20Vacation%20Vibes%20Tours%20and%20Travels,%20I%20would%20like%20to%20book%20a%20trip."
+           target="_blank">
+          WhatsApp Us
+        </a>
+
+        <a class="btn btn-outline"
+           href="tel:+919489776369">
+          Call Now
+        </a>
+      </div>
+    </div>
+
+    <div class="map-card">
+      <iframe
+        src="https://www.google.com/maps?q=Coonoor,Tamil+Nadu&output=embed"
+        width="100%"
+        height="320"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<script src="script.js"></script>
+<a class="floating-whatsapp"
+   href="https://wa.me/919585945565?text=Hello%20Vacation%20Vibes%20Tours%20and%20Travels,%20I%20would%20like%20to%20book%20a%20trip."
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+  💬
+</a>
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <h3>Vacation Vibes Tours and Travels</h3>
+      <p>Your trusted travel partner in Coonoor, Ooty, and the Nilgiris.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#vehicles">Vehicles</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>+91 95859 45565</p>
+      <p>Coonoor, Nilgiris</p>
+      <p>Available 24/7</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Vacation Vibes Tours and Travels. All Rights Reserved.</p>
+  </div>
+</footer>
+</body>
+<div id="loader">
+  <div class="loader-text">Vacation Vibes</div>
+</div>
+</html>
