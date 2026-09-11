@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="sh" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="94" fill="url(#g)" opacity="0.12"/>
+  <circle cx="100" cy="100" r="94" fill="none" stroke="url(#g)" stroke-width="6"/>
+  <circle cx="100" cy="100" r="80" fill="none" stroke="url(#g)" stroke-width="1.5" opacity="0.5"/>
+  <path d="M58 130 L78 78 L92 108 L104 86 L126 130 Z" fill="url(#g)"/>
+  <text x="100" y="172" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" fill="url(#g)" text-anchor="middle" letter-spacing="3">VIBES</text>
+  <path d="M44 44 Q100 22 156 44 L156 52 Q100 32 44 52 Z" fill="url(#sh)"/>
+</svg>
